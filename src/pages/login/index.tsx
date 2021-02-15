@@ -27,9 +27,15 @@ const Login: React.FC = () => {
         >
           <Container>
             <Image source={logoImage} />
-            <Input />
-            <Input />
-            <Button>Login</Button>
+            <Input name="login" icon="user" placeholder="Usuario" />
+            <Input name="password" icon="lock" placeholder="Senha" />
+            <Button
+              onPress={() => {
+                console.log('LOGOU');
+              }}
+            >
+              Login
+            </Button>
           </Container>
         </KeyboardAvoidingView>
       </ScrollView>
